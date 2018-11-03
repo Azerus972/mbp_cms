@@ -14,7 +14,7 @@
                             </div>
                         @endif
 
-                        You are logged in boy
+                        Vous êtes connecté en tant que rédacteur bon posts <strong>{{ Auth::user()->name }}</strong> !
                     </div>
                 </div>
             </div>

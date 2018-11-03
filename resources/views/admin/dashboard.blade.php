@@ -14,7 +14,8 @@
                             </div>
                         @endif
 
-                        You are logged in boy
+                        Vous êtes connecté en tant qu'administrateur bon retour parmis nous
+                        <strong>{{ Auth::user()->name }}</strong>
                     </div>
                 </div>
             </div>
