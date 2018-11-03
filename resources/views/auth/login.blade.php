@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('tile','Login')
+@section('title','Login')
 
 @push('css')
 
@@ -11,13 +11,18 @@
 @endpush
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+    <div class="slider display-table center-text">
+        <h1 class="title display-table-cell"><b>Connectez-vous </b></h1>
+    </div><!-- slider -->
 
-                    <div class="card-body">
+    <section class="blog-area section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 col-md-0"></div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="post-wrapper">
+
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
@@ -80,11 +85,14 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+                    </div><!-- post-wrapper -->
+                </div><!-- col-sm-8 col-sm-offset-2 -->
+            </div><!-- row -->
+
+        </div><!-- container -->
+    </section><!-- section -->
+
 
 @endsection
 
