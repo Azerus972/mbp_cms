@@ -1,4 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.frontend.app')
+
+@section('tile','Login')
+
+@push('css')
+
+    <link href="{{ asset('assets/frontend/css/auth/styles.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('assets/frontend/css/auth/responsive.css') }}" rel="stylesheet">
+
+@endpush
 
 @section('content')
     <div class="container">
@@ -75,4 +85,10 @@
             </div>
         </div>
     </div>
+
 @endsection
+
+
+@push('js')
+
+@endpush
