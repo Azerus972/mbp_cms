@@ -4,9 +4,9 @@
 
 @push('css')
 
-    <link href="front-page-category/css/styles.css" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/home/styles.css') }}" rel="stylesheet">
 
-    <link href="front-page-category/css/responsive.css" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/home/responsive.css') }}" rel="stylesheet">
 
 @endpush
 
@@ -443,6 +443,7 @@
 @endsection
 
 @push('js')
+    <script src="{{ asset('assets/frontend/js/swiper.js') }}"></script>
 
 
 @endpush
