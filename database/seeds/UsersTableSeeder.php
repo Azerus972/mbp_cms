@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -15,17 +14,17 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             'role_id' => '1',
-            'name' => 'Azerus.Admin',
+            'name' => 'MD.Admin',
             'username' => 'admin',
-            'email' => 'kevinm@mybestplace.fr',
+            'email' => 'admin@blog.com',
             'password' => bcrypt('rootadmin'),
         ]);
 
         DB::table('users')->insert([
             'role_id' => '2',
-            'name' => 'MBP.Auteur',
-            'username' => 'auteur',
-            'email' => 'support@mybestplace.fr',
+            'name' => 'MD.Author',
+            'username' => 'author',
+            'email' => 'author@blog.com',
             'password' => bcrypt('rootauthor'),
         ]);
     }
