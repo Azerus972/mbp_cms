@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                           ADD NEW TAG
+                           Ajouter un nouveau tag
                         </h2>
                     </div>
                     <div class="body">
