@@ -119,7 +119,7 @@ class CategoryController extends Controller
     {
         $this->validate($request,[
             'name' => 'required',
-            'image' => 'mimes:jpeg,bmp,png,jpg'
+            'image' => 'required|image|mimes:jpeg,bmp,png,jpg'
         ]);
         // get form image
         $image = $request->file('image');
