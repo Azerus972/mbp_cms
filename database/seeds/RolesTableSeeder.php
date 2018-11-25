@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class RolesTableSeeder extends Seeder
 {
@@ -17,9 +17,8 @@ class RolesTableSeeder extends Seeder
             'slug' => 'admin',
         ]);
         DB::table('roles')->insert([
-            'name' => 'Auteur',
-            'slug' => 'auteur',
+            'name' => 'Author',
+            'slug' => 'author',
         ]);
-
     }
 }
