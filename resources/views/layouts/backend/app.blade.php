@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <p>Please wait...</p>
+        <p>Chargement en cours...</p>
     </div>
 </div>
 <!-- #END# Page Loader -->
@@ -88,7 +88,7 @@
 <script src="{{ asset('assets/backend/plugins/bootstrap/js/bootstrap.js') }}"></script>
 
 <!-- Select Plugin Js -->
-{{--<script src="{{ asset('assets/backend/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>--}}
+<script src="{{ asset('assets/backend/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>--}}
 
 <!-- Slimscroll Plugin Js -->
 <script src="{{ asset('assets/backend/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>

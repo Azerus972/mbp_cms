@@ -20,7 +20,7 @@
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                            <i class="material-icons">input</i>Sign Out
+                            <i class="material-icons">input</i>Déconnexion
                         </a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -41,7 +41,7 @@
                 <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
                     <a href="{{ route('admin.dashboard') }}">
                         <i class="material-icons">dashboard</i>
-                        <span>Dashboard</span>
+                        <span>Tableau de bord</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/tag*') ? 'active' : '' }}">

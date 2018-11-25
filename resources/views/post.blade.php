@@ -175,23 +175,23 @@
 
     <section class="comment-section">
         <div class="container">
-            <h4><b>POST COMMENT</b></h4>
+            <h4><b>Postez un commentaire !</b></h4>
             <div class="row">
 
                 <div class="col-lg-8 col-md-12">
                     <div class="comment-form">
                         @guest
-                            <p>For post a new comment. You need to login first. <a href="{{ route('login') }}">Login</a></p>
+                            <p>Pour commenter vous devez être connecté <a href="{{ route('login') }}">Connexion</a></p>
                         @else
                             <form method="post" action="{{ route('comment.store',$post->id) }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <textarea name="comment" rows="2" class="text-area-messge form-control"
-                                                  placeholder="Enter your comment" aria-required="true" aria-invalid="false"></textarea >
+                                                  placeholder="Entrez votre commentaire" aria-required="true" aria-invalid="false"></textarea >
                                     </div><!-- col-sm-12 -->
                                     <div class="col-sm-12">
-                                        <button class="submit-btn" type="submit" id="form-submit"><b>POST COMMENT</b></button>
+                                        <button class="submit-btn" type="submit" id="form-submit"><b>Poster le commentaire</b></button>
                                     </div><!-- col-sm-12 -->
 
                                 </div><!-- row -->
@@ -199,7 +199,7 @@
                         @endguest
                     </div><!-- comment-form -->
 
-                    <h4><b>COMMENTS({{ $post->comments()->count() }})</b></h4>
+                    <h4><b>Commentaires({{ $post->comments()->count() }})</b></h4>
                     @if($post->comments->count() > 0)
                         @foreach($post->comments as $comment)
                             <div class="commnets-area ">
@@ -230,7 +230,7 @@
                     <div class="commnets-area ">
 
                         <div class="comment">
-                            <p>No Comment yet. Be the first :)</p>
+                            <p>Soyez le premier à commenter :)</p>
                     </div>
                     </div>
 
