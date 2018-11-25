@@ -161,14 +161,14 @@
         }
         function approvePost(id) {
             swal({
-                title: 'Are you sure?',
-                text: "You went to approve this post ",
+                title: 'Vous en êtes sûr?',
+                text: "Vous êtes sur le point d'approuver ce post",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, approve it!',
-                cancelButtonText: 'No, cancel!',
+                confirmButtonText: 'Oui, je l approuve!',
+                cancelButtonText: 'Houston on annule tout!',
                 confirmButtonClass: 'btn btn-success',
                 cancelButtonClass: 'btn btn-danger',
                 buttonsStyling: false,
@@ -182,8 +182,8 @@
                     result.dismiss === swal.DismissReason.cancel
                 ) {
                     swal(
-                        'Cancelled',
-                        'The post remain pending :)',
+                        'Annulé',
+                        'Le post est de nouveau en attente :)',
                         'info'
                     )
                 }

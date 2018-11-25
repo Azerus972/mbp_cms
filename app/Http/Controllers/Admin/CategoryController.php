@@ -80,7 +80,7 @@ class CategoryController extends Controller
         $category->slug = $slug;
         $category->image = $imagename;
         $category->save();
-        Toastr::success('Category Successfully Saved :)' ,'Success');
+        Toastr::success('La catégorie à bien été crée :)' ,'Success');
         return redirect()->route('admin.category.index');
 
     }
@@ -141,7 +141,7 @@ class CategoryController extends Controller
                 Storage::disk('public')->delete('category/'.$category->image);
             }
 //            resize image for category and upload
-            $categoryimage = Image::make($image)->resize(1600,479)->save();
+            $categoryimage = Image::make($image)->resize(1600,479)->save('default.png', 90);
             Storage::disk('public')->put('category/'.$imagename,$categoryimage);
 
             //            check category slider dir is exists
