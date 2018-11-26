@@ -12,7 +12,7 @@
                 <ul class="dropdown-menu pull-right">
 
                     <li>
-                        <a href="{{ Auth::user()->role->id == 1 ? route('admin.settings') : route('author.settings')}}"><i class="material-icons">settings</i>Settings</a>
+                        <a href="{{ Auth::user()->role_id == 1 ? route('admin.settings') : route('author.settings')}}"><i class="material-icons">settings</i>Settings</a>
                     </li>
 
                     <li role="seperator" class="divider"></li>
