@@ -27,7 +27,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="footer-section">
 
-                    <h4 class="title"><b>S'abbonner à la newsletter</b></h4>
+                    <h4 class="title"><b>S'abonner à la newsletter</b></h4>
                     <div class="input-area">
                         <form method="POST" action="{{ route('subscriber.store') }}">
                             @csrf
