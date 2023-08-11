@@ -230,7 +230,7 @@
                     <div class="commnets-area ">
 
                         <div class="comment">
-                            <p>Soyez le premier à commenter :)</p>
+                            <p>Soyez le premier à commenter !</p>
                     </div>
                     </div>
 
