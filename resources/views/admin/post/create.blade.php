@@ -17,7 +17,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                               ADD NEW POST
+                               ADD A NEW POST
                             </h2>
                         </div>
                         <div class="body">
